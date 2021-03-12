@@ -1,0 +1,80 @@
+@import '../../styles/variables.scss';
+
+.mainContainer {
+  background-color: #232323;
+  color: #fff;
+  min-height: calc(100vh - 410px);
+  padding: 0 30px;
+}
+
+.moviesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.pageWrapper {
+  max-width: 1500px;
+  margin: auto ;
+}
+
+.filterWrapper {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid $color-light-grey;
+  padding: 15px 0;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.filterItem {
+  position: relative;
+  margin-right: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: $color-white;
+}
+
+.filterItem:hover {
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -17px;
+    width: 100%;
+    border-bottom: 2px solid $color-red;
+  }
+}
+
+.filterItemActive::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -17px;
+  width: 100%;
+  border-bottom: 2px solid $color-red;
+}
+
+.sort {
+  color: #afafaf;
+  margin-right: 15px;
+}
+
+.sortSelect {
+  background-color: $color-dark-grey;
+  border: none;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.filterResult {
+  font-size: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
