@@ -1,6 +1,6 @@
 import React from 'react';
 import { Movies } from '../../mock-data/movies';
-import { MovieCard } from '../movie-card';
+import { MovieCard } from './movie-card';
 
 export const MoviesList = () => {
     return Movies.map((movie) => (
