@@ -1,0 +1,83 @@
+@import '../../../styles/variables';
+
+.modal {
+  background-color: #232323;
+  width: 500px;
+  padding: 50px;
+  position: relative;
+  color: $color-white;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.dropdownButtonClose {
+  position: absolute;
+  top: 1%;
+  right: 2%;
+  font-size: 20px;
+  background-color: transparent;
+  color: $color-white;
+  border: none;
+  padding-top: 10px;
+  cursor: pointer;
+  margin-bottom: 7px;
+}
+
+.inputWrap {
+  display: flex;
+  flex-direction: column;
+  margin-top: 22px;
+}
+
+.input {
+  width: 100%;
+  margin-right: 20px;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  color: $color-white;
+  background-color: #2e2e2e;
+  border-radius: 5px;
+}
+
+.label {
+  text-transform: uppercase;
+  color: $color-red;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.redButton {
+  background-color: $color-red;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: $color-white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.resetButton {
+  color: $color-red;
+  border: 1px solid $color-red;
+  background-color: #232323;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.modalFooter {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
